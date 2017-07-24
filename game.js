@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 function Square(props) {
   return (
@@ -8,7 +8,7 @@ function Square(props) {
   );
 }
 
-class Board extends React.Component {
+class Board extends Component {
   renderSquare(i) {
     return (
       <Square
@@ -41,7 +41,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
+class Game extends Component {
   constructor() {
     super();
     this.state = {
@@ -104,7 +104,7 @@ class Game extends React.Component {
 
     return (
       <div className='game'>
-        <h1>React dawg</h1>
+        <h1>{this.props.renderer} dawg</h1>
         <div className='game-board'>
           <Board
             squares={current.squares}

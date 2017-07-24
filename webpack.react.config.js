@@ -21,8 +21,8 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env', 'es2017', 'preact'],
-            plugins: [['transform-react-jsx', {}]]
+            presets: ['env', 'es2017', 'react'],
+            plugins: ['transform-react-jsx']
           }
         }
       }

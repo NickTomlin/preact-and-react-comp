@@ -1,4 +1,5 @@
-import { h, render, Component } from 'preact'
-import Game from './game.preact'
+import React from 'preact'
+import {render} from 'react-dom'
+import Game from './game'
 
-render(<Game />, document.getElementById('root'))
+render(<Game renderer='Preact' />, document.getElementById('root'))
